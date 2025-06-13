@@ -1,16 +1,16 @@
 import random
 
-# Palavra secreta escolhida aleatoriamente
 dados = ['editar', 'galinha', 'python', 'tiktok', 'laranja']
 palavra = random.choice(dados)
 
-# Lista de letras adivinhadas (substituídas por _ no início)
 palavra_testada = ['_'] * len(palavra)
 
-# Número de tentativas disponíveis
+letras_tentadas = []
+
 tentativa = 10
 
-# Loop principal do jogo
+
+
 while tentativa > 0:
     print('\nPalavra atual: ' + ' '.join(palavra_testada))
     
@@ -23,7 +23,7 @@ while tentativa > 0:
         print('Ótima escolha!')
     else:
         tentativa -= 1
-        print('Errou! Tente de nnovo: ' + str(tentativa))
+        print('Errou! Tente de novo: ' + str(tentativa))
     
     if '_' not in palavra_testada:
         print('\nParabéns, você acertou a palavra! ' + palavra)
