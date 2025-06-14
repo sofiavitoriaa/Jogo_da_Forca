@@ -1,6 +1,6 @@
 import random
 
-dados = ['editar', 'galinha', 'laranja', 'cobra', 'carro', 'morango', 'óculos', 'colchão', 'navio']
+dados = ['editar', 'galinha', 'laranja', 'cobra', 'carro', 'morango', 'geladeira', 'ventilador', 'navio']
 palavra = random.choice(dados)
 
 palavra_testada = ['_'] * len(palavra)
