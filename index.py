@@ -1,6 +1,6 @@
 import random
 
-dados = ['editar', 'galinha', 'python', 'tiktok', 'laranja']
+dados = ['editar', 'galinha', 'python', 'tiktok', 'laranja', 'cobra', 'carro', 'morango']
 palavra = random.choice(dados)
 
 palavra_testada = ['_'] * len(palavra)
@@ -23,7 +23,7 @@ while tentativa > 0:
         print('Ótima escolha!')
     else:
         tentativa -= 1
-        print('Errou! Tente de novo: ' + str(tentativa))
+        print('Errou! Você tem mais ' + str(tentativa) + ' chances.')
     
     if '_' not in palavra_testada:
         print('\nParabéns, você acertou a palavra! ' + palavra)
